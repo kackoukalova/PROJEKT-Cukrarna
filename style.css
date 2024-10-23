@@ -28,7 +28,12 @@ html { box-sizing: border-box; }
 	#303339		tmavé pozadí patičky
 */
 
-img {max-width: 100%;}
+
+/* OBECNÉ */
+img {
+	max-width: 100%;
+}
+
 body {
 	margin: 0;
 	font-family: "Lora", serif;
@@ -36,60 +41,31 @@ body {
 	line-height: 1.5;
 }
 
-
-
-.hlavicka {margin: 30px auto;
-	max-width: 1100px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.logo {
-	width: 170px;
-}
-
-nav ul li {display: inline-block;}
-
-nav a {padding: 10px 15px;
-	color: #242424;
-	text-decoration: none;
-	font-weight: 500;
-}
-nav a:hover {
-	padding: 10px 15px;
-	border-radius: 20px;
-	background-color: #f195b2;
-	color: #fff;
-}
-
-
-
-h1 {font-size: 52px;
-	width: 60%;}
-
-h2 {font-size: 36px;
-	color: #3e606b;
-	font-family: "Playfair Display", serif;
-}	
-
-h3 {color: #3e606b;
-	font-family: "Playfair Display", serif;
-}
-
-.hero p {
-	font-size: 24px;
-	font-style: italic;
+h1 {
+	font-size: 52px;
 	width: 60%;
 }
 
+h2 {
+	font-size: 36px;
+	color: #3e606b;
+	font-family: "Playfair Display", serif;
+}
+
+h3 {
+	color: #3e606b;
+	font-family: "Playfair Display", serif;
+}
+
+
 .button {
-background-color: #f195b2;
-padding: 15px 40px;
-border-radius: 30px;
-color: #fff;
-text-decoration: none;
-position:relative;
-top: 30px;
+	background-color: #f195b2;
+	padding: 15px 40px;
+	border-radius: 30px;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: 30px;
 }
 
 .button:hover {
@@ -101,18 +77,43 @@ section {
 	padding: 80px 0;
 }
 
-.sekce1,
-.sekce2,
-.sekce3 {
-	display: flex;
-	justify-content: space-between;
-	
-}
-
-.short {max-width: 1100px;
+.short {
+	max-width: 1100px;
 	margin: 0 auto;
 }
 
+/* HLAVICKA */
+.hlavicka {
+	margin: 30px auto;
+	max-width: 1100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 170px;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav a {
+	padding: 10px 15px;
+	color: #242424;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+nav a:hover {
+	padding: 10px 15px;
+	border-radius: 20px;
+	background-color: #f195b2;
+	color: #fff;
+}
+
+
+/* HERO */
 
 .hero {
 	background-image: url("images/cupcake.jpg");
@@ -123,36 +124,61 @@ section {
 	color: #fff;
 }
 
-.box1, .box2 {flex: 0 0 calc(50% - 15px);}
+.hero p {
+	font-size: 24px;
+	font-style: italic;
+	width: 60%;
+}
+
+/* SEKCE 1 - Vítejte v cukrárně */
+
+.sekce1,
+.sekce2,
+.sekce3 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.box1, .box2 {
+	flex: 0 0 calc(50% - 15px);
+}
 
 .box1 img,
 .box2 img {
 	border-radius: 5px;
 }
 
+/* SEKCE 2  - Nabídka */
 
+.nabidka {
+	background-color: #f0F0F0;
+}
 
-.nabidka {background-color: #f0F0F0;}
-
-.sekce2 {display: flex;
-justify-content: space-between;
+.sekce2 {
+	display: flex;
+	justify-content: space-between;
 }
 
 .sekce2 > div {
 	flex: 0 0 calc(25% - (90px / 3));
 	border-radius: 5px;
+	background-color: #fff;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-
-
 }
 
-.sekce2 img {border-radius: 5px 5px 0 0;}
-.text {padding: 20px;
-text-align: center;}
+.sekce2 img {
+	border-radius: 5px 5px 0 0;
+}
+
+.text {
+	padding: 20px;
+	text-align: center;
+}
 
 .text h3 {margin-top: 0;}
 .text p {margin-bottom: 0;}
 
+/* PATICKA */
 
 footer {
 	padding: 30px 0;
